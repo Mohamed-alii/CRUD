@@ -1,0 +1,86 @@
+<html>
+
+    <head>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/all.min.css" >
+        <link rel="stylesheet" href="css/index_style.css">
+
+    </head>
+
+    <body>
+
+        
+
+
+
+         <form class="container my-5" >
+
+            <label>product name :</label>
+
+            <input class="form-control my-2 " type="text" id="productName" >
+
+            <label>product price :</label>
+
+            <input class="form-control my-2" type="text" id="productPrice" >
+
+            <label>product category :</label>
+
+            <input class="form-control my-2" type="text" id="productCategory" >
+
+            <label>product description :</label>
+
+            <textarea class="form-control my-2" type="text" id="productDescription" > </textarea>
+
+            <button class="btn btn-info my-2" id="add" >add</button>
+
+        </form>
+
+        <div class="w-50 py-5 m-auto">
+
+            <input onkeyup="productSearch(this.value)" class="form-control" placeholder="search by product name">
+
+            <div id="searchResults" class="py-1"> </div>
+
+        </div>
+
+
+        <div class="container my-3" >
+
+
+            <table class="table text-center" >
+
+                <thead>
+                    <tr>
+                        <td>name</td>
+                        <td>Price</td>
+                        <td>category</td>
+                        <td>description</td>
+                        <td>update</td>
+                        <td>delete</td>
+                    </tr>
+                </thead>
+
+                <tbody id="tableBody">
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+        
+
+
+
+
+
+        <script src="js/jquery-3.4.1.slim.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+
+</html>
